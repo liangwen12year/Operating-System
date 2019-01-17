@@ -1,0 +1,247 @@
+
+/*********************** do not use kill command ,wait the child die itself************/
+
+
+wliang@OS310-08:~/Spring2017/comp3080hw1$ ./a1d &
+[1] 4251
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+This is the Parent process report:
+
+PARENT PROG: Process ID is:             4251
+PARENT PROG : Process parent ID is :    3762
+PARENT PROG : Real UID is :             42372
+PARENT PROG : Real GID is :             5000
+PARENT PROG : Effective UID is :        42372
+PARENT PROG : Effective GID is :        5000
+PARENT PROG : Process priority is :     0
+
+PARENT PROG:will now spawn the child, read pipe,
+ signal child, and wait for child die
+
+PARENT PROG:created Child with 4252 PID
+
+This is the Child process report:
+
+CHILD PROG: Process ID is:              4252
+CHILD PROG : Process parent ID is :     4251
+CHILD PROG : Real UID is :              42372
+CHILD PROG : Real GID is :              5000
+CHILD PROG : Effective UID is :         42372
+CHILD PROG : Effective GID is :         5000
+CHILD PROG : Process priority is :      0
+
+CHILD PROG: about to write pipe and go to endless loop
+
+PARENT PROG: read pipe and sent SIGTERM, now wait exit
+
+CHILD PROG: Awake in handler - You Got Me With Signal Number 15 after spinning for more than 3732  loop iterations
+CHILD PROG:Now beginning to exec target program, goodbye
+
+This is the Prof process report:
+
+PROF PROG:  Process ID is:              4252
+PROF PROG:  Process parent ID is:       4251
+PROF PROG:  Real UID is:                42372
+PROF PROG:  Real GID is:                5000
+PROF PROG:  Effective UID is:           42372
+PROF PROG:  Effective GID is:           5000
+PROF PROG:  Process priority is:        5
+
+PROF PROG: going into and endless loop, use
+ kill 4252   to kill me now
+
+PROF PROG: timed out after 20 billion iterations
+
+PARENT PROG: CHILD 4252 exited with exit code 2, goodbye
+./a1d &
+[2] 4264
+[1]   Done                    ./a1d
+
+
+
+
+/*********************use kill pid command to kill the child********************/
+
+wliang@OS310-08:~/Spring2017/comp3080hw1$ ./a1d&
+This is the Parent process report:
+
+PARENT PROG: Process ID is:             4264
+PARENT PROG : Process parent ID is :    3762
+PARENT PROG : Real UID is :             42372
+PARENT PROG : Real GID is :             5000
+PARENT PROG : Effective UID is :        42372
+PARENT PROG : Effective GID is :        5000
+PARENT PROG : Process priority is :     0
+
+PARENT PROG:will now spawn the child, read pipe,
+ signal child, and wait for child die
+
+PARENT PROG:created Child with 4265 PID
+
+
+This is the Child process report:
+
+CHILD PROG: Process ID is:              4265
+CHILD PROG : Process parent ID is :     4264
+CHILD PROG : Real UID is :              42372
+CHILD PROG : Real GID is :              5000
+CHILD PROG : Effective UID is :         42372
+CHILD PROG : Effective GID is :         5000
+CHILD PROG : Process priority is :      0
+
+CHILD PROG: about to write pipe and go to endless loop
+
+
+PARENT PROG: read pipe and sent SIGTERM, now wait exit
+CHILD PROG: Awake in handler - You Got Me With Signal Number 15 after spinning for more than 1625  loop iterations
+CHILD PROG:Now beginning to exec target program, goodbye
+
+This is the Prof process report:
+
+PROF PROG:  Process ID is:              4265
+PROF PROG:  Process parent ID is:       4264
+PROF PROG:  Real UID is:                42372
+PROF PROG:  Real GID is:                5000
+PROF PROG:  Effective UID is:           42372
+PROF PROG:  Effective GID is:           5000
+PROF PROG:  Process priority is:        5
+
+PROF PROG: going into and endless loop, use
+ kill 4265   to kill me now
+
+ kill 4265
+
+
+PROF PROG: Awake in handler - You Got Me With Signal
+ Number 15 after spinning for more
+ than 6 Billion loop iterations, goodbye
+
+
+PARENT PROG: CHILD 4265 exited with exit code 1, goodbye
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+[2]+  Done                    ./a1d
+
+
+
+
+
+
+
+/*********************use kill -2 pid command to kill the child********************/
+
+wliang@OS310-08:~/Spring2017/comp3080hw1$ ./a1d &
+[1] 4266
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+This is the Parent process report:
+
+PARENT PROG: Process ID is:             4266
+PARENT PROG : Process parent ID is :    3762
+PARENT PROG : Real UID is :             42372
+PARENT PROG : Real GID is :             5000
+PARENT PROG : Effective UID is :        42372
+PARENT PROG : Effective GID is :        5000
+PARENT PROG : Process priority is :     0
+
+PARENT PROG:will now spawn the child, read pipe,
+ signal child, and wait for child die
+
+PARENT PROG:created Child with 4267 PID
+
+This is the Child process report:
+
+CHILD PROG: Process ID is:              4267
+CHILD PROG : Process parent ID is :     4266
+CHILD PROG : Real UID is :              42372
+CHILD PROG : Real GID is :              5000
+CHILD PROG : Effective UID is :         42372
+CHILD PROG : Effective GID is :         5000
+CHILD PROG : Process priority is :      0
+
+CHILD PROG: about to write pipe and go to endless loop
+
+
+PARENT PROG: read pipe and sent SIGTERM, now wait exit
+CHILD PROG: Awake in handler - You Got Me With Signal Number 15 after spinning for more than 1070  loop iterations
+
+CHILD PROG:Now beginning to exec target program, goodbye
+
+This is the Prof process report:
+
+PROF PROG:  Process ID is:              4267
+PROF PROG:  Process parent ID is:       4266
+PROF PROG:  Real UID is:                42372
+PROF PROG:  Real GID is:                5000
+PROF PROG:  Effective UID is:           42372
+PROF PROG:  Effective GID is:           5000
+PROF PROG:  Process priority is:        5
+
+PROF PROG: going into and endless loop, use
+ kill 4267   to kill me now
+
+kill -2 4267
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+PARENT PROG: CHILD 4267 exited with signal code 2, goodbye
+
+[1]+  Done                    ./a1d
+
+
+
+
+
+
+
+
+/*********************use kill -3 pid command to kill the child********************/
+
+wliang@OS310-08:~/Spring2017/comp3080hw1$ ./a1d &
+[1] 4273
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+This is the Parent process report:
+
+PARENT PROG: Process ID is:             4273
+PARENT PROG : Process parent ID is :    3762
+PARENT PROG : Real UID is :             42372
+PARENT PROG : Real GID is :             5000
+PARENT PROG : Effective UID is :        42372
+PARENT PROG : Effective GID is :        5000
+PARENT PROG : Process priority is :     0
+
+PARENT PROG:will now spawn the child, read pipe,
+ signal child, and wait for child die
+
+PARENT PROG:created Child with 4274 PID
+
+This is the Child process report:
+
+CHILD PROG: Process ID is:              4274
+CHILD PROG : Process parent ID is :     4273
+CHILD PROG : Real UID is :              42372
+CHILD PROG : Real GID is :              5000
+CHILD PROG : Effective UID is :         42372
+CHILD PROG : Effective GID is :         5000
+CHILD PROG : Process priority is :      0
+
+CHILD PROG: about to write pipe and go to endless loop
+
+
+PARENT PROG: read pipe and sent SIGTERM, now wait exit
+CHILD PROG: Awake in handler - You Got Me With Signal Number 15 after spinning f
+CHILD PROG:Now beginning to exec target program, goodbye
+
+This is the Prof process report:
+
+PROF PROG:  Process ID is:              4274
+PROF PROG:  Process parent ID is:       4273
+PROF PROG:  Real UID is:                42372
+PROF PROG:  Real GID is:                5000
+PROF PROG:  Effective UID is:           42372
+PROF PROG:  Effective GID is:           5000
+PROF PROG:  Process priority is:        5
+
+PROF PROG: going into and endless loop, use
+ kill 4274   to kill me now
+
+ kill -3 4274
+wliang@OS310-08:~/Spring2017/comp3080hw1$ 
+PARENT PROG: CHILD 4274 exited with signal code 3 and a coredump, goodbye
+

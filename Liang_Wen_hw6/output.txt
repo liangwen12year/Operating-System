@@ -1,0 +1,219 @@
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat
+File: .
+Type: directory
+Permissions: rwxr-x-wx
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 22:34:54 2017
+Links: 2
+Size: 4096
+I-Node Number: 9518597441863824114 
+
+File: Makefile
+Type: regular file
+Permissions: rw-r---w-
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 17:31:41 2017
+Links: 1
+Size: 90
+I-Node Number: 9969783894060040984 
+
+File: write-up.docx
+Type: regular file
+Permissions: rw-r---w-
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 17:29:58 2017
+Links: 1
+Size: 9612
+I-Node Number: 12481533099583993501 
+
+File: main.c
+Type: regular file
+Permissions: rw-r---w-
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 17:38:13 2017
+Links: 1
+Size: 2776
+I-Node Number: 10366252966360249677 
+
+File: ..
+Type: directory
+Permissions: rwxr-x-wx
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 17:50:20 2017
+Links: 8
+Size: 4096
+I-Node Number: 11149781644271859317 
+
+File: output.txt
+Type: regular file
+Permissions: rw-r---w-
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 17:06:50 2017
+Links: 1
+Size: 2499
+I-Node Number: 10342087515852371723 
+
+File: stat
+Type: regular file
+Permissions: rwxr-x-wx
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 22:40:25 2017
+Links: 1
+Size: 13112
+I-Node Number: 12433071625631468175 
+
+File: main.o
+Type: regular file
+Permissions: rw-r---w-
+Owner: wliang
+Group: grad
+Last Modified: Tue Dec 12 22:34:54 2017
+Links: 1
+Size: 5016
+I-Node Number: 13737134046594958972 
+
+
+
+wliang@OS310-02:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat /dev/sda1
+File: /dev/sda1
+Type: block
+Permissions: rw-rw----
+Owner: root
+Group: disk
+Last Modified: Tue Dec 12 21:01:42 2017
+Links: 1
+Major: 8, Minor 1
+I-Node Number: 13694 
+
+
+wliang@OS310-02:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat /dev/tty
+File: /dev/tty
+Type: character
+Permissions: rw-rw-rw-
+Owner: root
+Group: tty
+Last Modified: Tue Dec 12 21:01:40 2017
+Links: 1
+Major: 5, Minor 0
+I-Node Number: 12 
+
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/abc
+File: /usr/cs/fac1/bill/cs308/statdir/abc
+Type: regular file
+Permissions: rwxr-x-wx
+Owner: bill
+Group: fac
+Last Modified: Tue Sep 10 09:44:06 2013
+Links: 1
+Size: 0
+I-Node Number: 13830050883648854865 
+
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/cat
+File: /usr/cs/fac1/bill/cs308/statdir/cat
+Type: regular file
+Permissions: rwxr-x-wx
+Owner: bill
+Group: fac
+Last Modified: Tue Sep 10 09:44:06 2013
+Links: 1
+Size: 19140
+I-Node Number: 13054949385736289200 
+
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/named_pipe
+File: /usr/cs/fac1/bill/cs308/statdir/named_pipe
+Type: pipe
+Permissions: rw-r---w-
+Owner: bill
+Group: fac
+Last Modified: Tue Sep 10 09:44:06 2013
+Links: 1
+Size: 0
+I-Node Number: 13248200937767744649 
+
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/sock
+File: /usr/cs/fac1/bill/cs308/statdir/sock
+Type: socket
+Permissions: rw-r---w-
+Owner: bill
+Group: fac
+Last Modified: Sat Jan  7 12:29:28 2017
+Links: 1
+Size: 0
+I-Node Number: 11276571508329987941 
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/subdir1
+File: /usr/cs/fac1/bill/cs308/statdir/subdir1
+Type: directory
+Permissions: rwxr-x-wx
+Owner: bill
+Group: fac
+Last Modified: Tue Sep 10 09:44:06 2013
+Links: 2
+Size: 4096
+I-Node Number: 11080699442874752673 
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/subdir1_link
+File: /usr/cs/fac1/bill/cs308/statdir/subdir1_link
+Type: link
+Permissions: rwxrwxrwx
+Owner: bill
+Group: fac
+Last Modified: Sat Jan  7 12:29:28 2017
+Links: 1
+Size: 7
+I-Node Number: 12257532569722621034 
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/xxx
+File: /usr/cs/fac1/bill/cs308/statdir/xxx
+Type: directory
+Permissions: rwx------
+Owner: bill
+Group: fac
+Last Modified: Thu Nov 30 10:52:21 2017
+Links: 2
+Size: 4096
+I-Node Number: 10466036736314539673
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/.
+File: /usr/cs/fac1/bill/cs308/statdir/.
+Type: directory
+Permissions: rwxr-x-wx
+Owner: bill
+Group: fac
+Last Modified: Thu Nov 30 10:50:49 2017
+Links: 4
+Size: 4096
+I-Node Number: 11215134459128770609 
+
+
+wliang@OS310-11:~/Spring2017/comp3080/Liang_Wen_hw6$ ./stat  ~bill/cs308/statdir/..
+File: /usr/cs/fac1/bill/cs308/statdir/..
+Type: directory
+Permissions: rwxr-x-wx
+Owner: bill
+Group: fac
+Last Modified: Thu Sep 14 10:52:30 2017
+Links: 3
+Size: 4096
+I-Node Number: 11693808010193664998 
+

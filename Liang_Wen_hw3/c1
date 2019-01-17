@@ -1,0 +1,152 @@
+consumer 1 consume dunuts 
+
+
+Process PID: 18616		Dozen number: 1		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+1		1		1		1		
+2		2		2		2		
+3		0		0		3		
+4		0		0		0		
+5		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 2		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+6		3		3		4		
+7		4		4		5		
+8		0		5		0		
+9		0		6		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 3		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+10		5		7		6		
+11		6		8		7		
+0		0		9		0		
+0		0		10		0		
+0		0		11		0		
+0		0		12		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 4		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+12		7		13		8		
+13		8		14		9		
+14		0		15		10		
+0		0		0		11		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 5		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+15		9		16		12		
+16		10		17		13		
+17		0		18		14		
+0		0		0		15		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 6		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+18		11		19		16		
+19		0		20		17		
+0		0		21		18		
+0		0		0		19		
+0		0		0		20		
+0		0		0		21		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 7		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+20		12		22		22		
+0		13		23		23		
+0		14		24		0		
+0		15		25		0		
+0		0		26		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 8		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+21		16		27		24		
+22		17		28		0		
+23		18		29		0		
+24		0		0		0		
+25		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 9		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+26		19		30		25		
+27		20		0		26		
+28		21		0		27		
+0		22		0		28		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+
+Process PID: 18616		Dozen number: 10		Time: 21:17:56.864
+jelly		coconut		plain		glazed		
+29		23		31		29		
+30		24		32		30		
+31		0		33		31		
+0		0		0		32		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
+0		0		0		0		
